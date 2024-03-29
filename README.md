@@ -25,4 +25,4 @@
 ## Контакты
 Для связи с разработчиками можно использовать следующие контакты:
 
-- [Telegram](https://t.me/ksinuss на Telegram)
+- [Telegram](https://t.me/ksinuss)
