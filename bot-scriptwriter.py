@@ -111,7 +111,7 @@ def end_task(message):
 def whole_story(message):
     user_id = message.from_user.id
     bot.send_message(user_id, 'Вот история, которая у нас получилась:')
-    all_history = execute_selection_query(f'SELECT content FROM users WHERE user_id = {user_id} AND session = {user_history[user_id]['session']-1} AND (role = "user" OR role = "assistant")')
+    all_history = execute_selection_query(f'SELECT content FROM users WHERE user_id = {user_id} AND session = {user_history[user_id]["session"]-1} AND (role = "user" OR role = "assistant")')
     for res in all_history:
         bot.send_message(user_id, res)
     bot.send_message(user_id, 'Конец истории.')
